@@ -9,7 +9,12 @@ const CommonTable = ({ headers = [], data = [], onUpdate, onDelete }) => {
       <Table
         stripe="odd"
         hoverRow
-        sx={{ captionSide: 'top', '& tbody': { bgcolor: 'background.surface' } }}
+        sx={{
+          captionSide: 'top',
+          '& thead th': { textAlign: 'left' }, 
+          '& tbody td': { textAlign: 'left' },
+          '& tbody': { bgcolor: 'background.surface' },
+        }}
       >
         <thead>
           <tr>
