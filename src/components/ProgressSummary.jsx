@@ -13,6 +13,7 @@ const ProgressCircle = ({ label, value, total, color }) => {
         padding: 2,
         minWidth: 140,
         textAlign: 'center',
+        height:'70px'
       }}
     >
       <Box sx={{ position: 'relative', display: 'inline-flex' }}>
@@ -52,7 +53,7 @@ const ProgressCircle = ({ label, value, total, color }) => {
 
 const ProgressSummary = ({ pending, inProgress, completed, total }) => {
   return (
-    <Grid container spacing={2} sx={{ display: 'flex', justifyContent: 'flex-start' }}>
+    <Grid container spacing={2} sx={{ display: 'flex', justifyContent: 'flex-end' }}>
       <Grid item>
         <ProgressCircle label="Approved" value={completed} total={total} color="green" />
       </Grid>
